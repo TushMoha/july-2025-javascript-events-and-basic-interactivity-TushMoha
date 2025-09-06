@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Week 6 Assignment - Interactive Web Pages</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Week 6: Interactive Web Pages with JavaScript</h1>
+
+  <!-- ============================
+       PART 1: Event Handling
+       ============================ -->
+  <section>
+    <h2>Part 1: Event Handling Examples</h2>
+    <button id="click-btn">Click Me!</button>
+    <p id="click-msg"></p>
+
+    <input type="text" id="hover-input" placeholder="Hover here and type..." />
+    <p id="hover-msg"></p>
+
+    <!-- Extra: Double-click demo -->
+    <button id="dbl-btn">Double Click Me!</button>
+    <p id="dbl-msg"></p>
+  </section>
+
+  <!-- ============================
+       PART 2: Interactive Elements
+       ============================ -->
+  <section>
+    <h2>Part 2: Interactive Features</h2>
+
+    <!-- Feature 1: Light/Dark Mode -->
+    <button id="mode-toggle">Toggle Dark Mode</button>
+
+    <!-- Feature 2: Counter Game -->
+    <div id="counter-box">
+      <p>Counter: <span id="counter">0</span></p>
+      <button id="increment-btn">Increase</button>
+      <button id="decrement-btn">Decrease</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+
+    <!-- Feature 3 (extra): Collapsible FAQ -->
+    <div class="faq">
+      <h3 class="faq-question">What is JavaScript? <span>+</span></h3>
+      <p class="faq-answer">JavaScript is a programming language that makes web pages interactive.</p>
+
+      <h3 class="faq-question">Why use JavaScript? <span>+</span></h3>
+      <p class="faq-answer">It allows you to add dynamic behavior, validate forms, and make web apps engaging.</p>
+    </div>
+  </section>
+
+  <!-- ============================
+       PART 3: Form Validation
+       ============================ -->
+  <section>
+    <h2>Part 3: Form Validation Example</h2>
+    <form id="signup-form">
+      <label>Name: <input type="text" id="name" /></label>
+      <span class="error" id="name-error"></span><br><br>
+
+      <label>Email: <input type="text" id="email" /></label>
+      <span class="error" id="email-error"></span><br><br>
+
+      <label>Password: <input type="password" id="password" /></label>
+      <span class="error" id="password-error"></span><br><br>
+
+      <label>Confirm Password: <input type="password" id="confirm-password" /></label>
+      <span class="error" id="confirm-error"></span><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="form-success"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
